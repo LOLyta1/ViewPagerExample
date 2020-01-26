@@ -6,8 +6,8 @@ import com.nata.tsivileva.kotlintraning.Fragments.FragmentThree
 import com.nata.tsivileva.kotlintraning.Fragments.FragmentTwo
 import com.nata.tsivileva.kotlintraning.R
 
-enum class FragmentTypes(val fragment: Fragment, val title: CharSequence) {
-    FIRST(FragmentOne(), "Fragment 1"),
-    SECOND(FragmentTwo(),"Fragment 2"),
-    THIRD(FragmentThree(),"Fragment 3")
+enum class FragmentTypes(val fragment: Fragment, val titleID: Int) {
+    FIRST(FragmentOne(), R.string.fragment_one_text),
+    SECOND(FragmentTwo(),R.string.fragment_two_text),
+    THIRD(FragmentThree(),R.string.fragment_three_text)
 }

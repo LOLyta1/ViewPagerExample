@@ -10,9 +10,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        view_pager.adapter=MyFragmentAdapter(supportFragmentManager)
+        setContentView(R.layout.activity_main)
+        view_pager.adapter=MyFragmentAdapter(this,supportFragmentManager)
         tab_layout.setupWithViewPager(view_pager)
+
     }
 }

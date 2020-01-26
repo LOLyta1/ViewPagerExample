@@ -7,11 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.nata.tsivileva.kotlintraning.R
 
-class FragmentTwo: Fragment(),IFragment {
-
-    override val title: String
-        get() = resources.getString(R.string.fragment_two_text)
-
+class FragmentTwo : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
